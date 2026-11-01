@@ -1,0 +1,50 @@
+{
+  "version": "3.0.0",
+  "commit": "0b2ae43154bcd1ab2be4e2445df8b406dcad77b2",
+  "sourceBranch": "main",
+  "snapshotDate": "2026-10-08",
+  "draft": "2020-12",
+  "upstream": "https://github.com/VDA5050/VDA5050",
+  "files": {
+    "order.schema": {
+      "sha256": "3d8b37a6660d72dd8c581f8df583cb722a04a0b03f9fc9e7c4c59897fe29d902",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/order.schema"
+    },
+    "instantActions.schema": {
+      "sha256": "230bfcab4617fb9e8b93c1b9c18c99da43b1c80619e3a1ecc8daa926cd792450",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/instantActions.schema"
+    },
+    "state.schema": {
+      "sha256": "9cb308fb2b59c591f518dabd32f030430e26963e5ad38e08d199eb1650dfc061",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/state.schema"
+    },
+    "visualization.schema": {
+      "sha256": "785223c024b1b9a7efd2596bb8455e76f5b0a08bbdcd8a140990a53ecce32608",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/visualization.schema"
+    },
+    "factsheet.schema": {
+      "sha256": "fb3290b804b6879c26d58d94f1185453f67e5050acc9182334fbb23c7e922556",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/factsheet.schema"
+    },
+    "connection.schema": {
+      "sha256": "50710e678b56ddeffe2af7f3c87687abd20f425d62235e05809895074abbd555",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/connection.schema"
+    },
+    "zoneSet.schema": {
+      "sha256": "4050df2a0821f9313e89a85c33ad702ec54b693b205196aaab557a318276efae",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/zoneSet.schema"
+    },
+    "responses.schema": {
+      "sha256": "780232b5867256fac4d995233435439b053a025c8e1f053d860bd17520fd3496",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/json_schemas/responses.schema"
+    },
+    "LICENSE.txt": {
+      "sha256": "e1a34a010d5572888c82ea7e9b7ee134517ef061159fdac8352e9a7c3acdd2dc",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/LICENSE.txt"
+    },
+    "README.md": {
+      "sha256": "e0d42c1a9bbd2df70119730e1f502c5d836fae32f6068a6fa549bbd94bc495ba",
+      "source": "https://raw.githubusercontent.com/VDA5050/VDA5050/0b2ae43154bcd1ab2be4e2445df8b406dcad77b2/README.md"
+    }
+  }
+}

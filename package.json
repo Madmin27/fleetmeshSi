@@ -1,0 +1,37 @@
+{
+  "name": "fleetmesh-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/vendor-massrobotics.mjs && node scripts/build.mjs",
+    "lint": "node --check scripts/build.mjs && node --check src/pages.mjs && node --check scripts/check.mjs && html-validate 'dist/**/*.html'",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "vendor": "node scripts/vendor-massrobotics.mjs"
+  },
+  "devDependencies": {
+    "@codemirror/commands": "6.11.1",
+    "@codemirror/lang-json": "6.0.2",
+    "@codemirror/language": "6.13.1",
+    "@codemirror/state": "6.7.6",
+    "@codemirror/view": "6.43.14",
+    "@lezer/highlight": "1.2.5",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "codemirror": "6.0.2",
+    "esbuild": "0.28.2",
+    "html-validate": "9.7.1",
+    "jsdom": "26.1.0",
+    "jsonc-parser": "3.3.1",
+    "lighthouse": "12.8.2",
+    "lucide": "1.53.0",
+    "playwright": "1.58.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Madmin27/leetmeshSi.git"
+  }
+}

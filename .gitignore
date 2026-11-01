@@ -1,0 +1,15 @@
+node_modules/
+dist/
+artifacts/
+src/generated/
+research/
+# Fetched at the pinned commit by `npm run vendor`; upstream has no LICENSE file, so not committed.
+src/vendor/massrobotics/*.json
+!src/vendor/massrobotics/manifest.json
+# Server-specific operation notes and deploy scripts are kept out of the public repository.
+OPERATIONS.md
+scripts/deploy*.sh
+scripts/release.sh
+fleetmesh.nginx*.conf
+fleetmesh.si.*.conf
+*.log

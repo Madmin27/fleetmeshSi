@@ -1,0 +1,2 @@
+.explorer-wrap[data-active-panel] .editor-panel,.explorer-wrap[data-active-panel] .message-navigation,.explorer-wrap[data-active-panel] .result-panel{display:block}
+.explorer-wrap .console-tabs{display:none}

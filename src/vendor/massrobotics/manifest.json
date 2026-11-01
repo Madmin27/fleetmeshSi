@@ -1,0 +1,25 @@
+{
+  "standard": "MassRobotics AMR Interoperability Standard",
+  "documentVersion": "1.0 (PDF in repository)",
+  "commit": "f9357a423ecabc3f7112e6d10025a5231943ec50",
+  "commitDate": "2021-10-08",
+  "sourceBranch": "main",
+  "snapshotDate": "2026-10-08",
+  "draft": "none declared ($schema absent); validated with JSON Schema draft-07 semantics",
+  "upstream": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard",
+  "license": "No LICENSE file is present in the repository snapshot. The schema is used here for local validation and field reference only; it is not redistributed as a download.",
+  "files": {
+    "AMR_Interop_Standard.json": {
+      "sha256": "816c8f78e1d280d10983a1bcea69a3c8e6572e5bb6f777a0863e6a5b2c3fc288",
+      "source": "https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/f9357a423ecabc3f7112e6d10025a5231943ec50/AMR_Interop_Standard.json"
+    },
+    "identityReport1.json": {
+      "sha256": "c8c35e010535a83135f2dcaeacec42ae9e2411c108ce0b7035ab6438b0549a94",
+      "source": "https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/f9357a423ecabc3f7112e6d10025a5231943ec50/examples/identityReport1.json"
+    },
+    "statusReport1.json": {
+      "sha256": "13b230e7e884c92bc551ba2800a5490259858af59b69e4470029c71060430cfd",
+      "source": "https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/f9357a423ecabc3f7112e6d10025a5231943ec50/examples/statusReport1.json"
+    }
+  }
+}

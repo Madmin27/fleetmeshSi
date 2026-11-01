@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2026 FleetMesh (fleetmesh.si)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+This license covers the site generator, the Message Explorer and the reference
+generator. Third-party material keeps its own terms:
+
+- VDA 5050 JSON Schemas in src/vendor/vda-5050/: MIT, Copyright 2024 Verband der
+  Automobilindustrie (see src/vendor/vda-5050/LICENSE.txt).
+- MassRobotics AMR Interop schema and examples: fetched at build time from the
+  upstream repository, which has no LICENSE file; they are not committed here.
+- Fonts: Geist and IBM Plex Mono under the SIL Open Font License 1.1
+  (src/assets/fonts/*-OFL.txt).
+- Bundled JavaScript dependencies: see the generated THIRD-PARTY-NOTICES.txt.
+
+Editorial text of the guides (src/pages.mjs, src/phase1-pages.mjs) is
+Copyright (c) 2026 FleetMesh and licensed under CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/). Generated reference pages quote
+schema descriptions verbatim under the schema's own license.

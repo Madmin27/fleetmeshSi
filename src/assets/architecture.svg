@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="352" viewBox="0 0 960 352" role="img" aria-labelledby="title desc">
+<title id="title">Conceptual autonomous fleet architecture</title><desc id="desc">Fleet management and orchestration connects through an interoperability layer to AMRs, AGVs, drones and autonomous vehicles. This is a subject-area model, not a product or a claim of common protocol compatibility.</desc>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+<path d="M480 78v35M480 178v43M120 250v-29h720v29M360 221v29M600 221v29" fill="none" stroke="#728e88" stroke-width="2"/>
+<rect x="240" y="8" width="480" height="70" rx="4" fill="#172b29"/><text x="480" y="39" font-size="21" fill="#fff">Fleet Management / Orchestration</text><text x="480" y="61" font-size="13" fill="#c4dad2">Tasks · traffic · energy · recovery</text>
+<rect x="240" y="113" width="480" height="65" rx="4" fill="#dff0e9" stroke="#7bab9c"/><text x="480" y="141" font-size="20" fill="#164e42">Interoperability Layer</text><text x="480" y="163" font-size="13" fill="#365e53">Interfaces · messages · capability models</text>
+<g fill="#fff" stroke="#b5c7c1"><rect x="20" y="250" width="200" height="65" rx="4"/><rect x="260" y="250" width="200" height="65" rx="4"/><rect x="500" y="250" width="200" height="65" rx="4"/><rect x="740" y="250" width="200" height="65" rx="4"/></g>
+<g fill="#1d2829" font-size="20"><text x="120" y="279">AMR</text><text x="360" y="279">AGV</text><text x="600" y="279">Drone</text><text x="840" y="279">Autonomous Vehicle</text></g>
+<g fill="#526367" font-size="12"><text x="120" y="300">Mobile robotics</text><text x="360" y="300">Guided transport</text><text x="600" y="300">Aerial systems</text><text x="840" y="300">Broader autonomy</text></g>
+<g fill="#08685d"><circle cx="480" cy="221" r="4"/><circle cx="120" cy="221" r="4"/><circle cx="360" cy="221" r="4"/><circle cx="600" cy="221" r="4"/><circle cx="840" cy="221" r="4"/></g>
+<text x="480" y="344" font-size="12" fill="#526367">CONCEPTUAL MODEL / Protocol scope and support differ by system.</text>
+</g></svg>

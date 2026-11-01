@@ -1,0 +1,12 @@
+@font-face{font-family:Geist;src:url('/assets/fonts/geist-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('/assets/fonts/ibm-plex-mono-latin.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+:root{
+  color-scheme:dark;
+  --surface-base:#111313;--surface-deep:#0c0e0e;--surface-panel:#191c1c;--surface-raised:#202424;
+  --text-primary:#f0f1eb;--text-secondary:#aeb7b5;--text-quiet:#969f9d;
+  --signal:#b7ed78;--signal-dim:#283522;--telemetry:#91c5d4;--warning:#e8c47a;--error:#ffaaa0;
+  --border:#343a39;--border-strong:#59635f;--focus:#c2f58b;
+  --font-sans:Geist,Arial,Helvetica,sans-serif;--font-mono:'IBM Plex Mono',Consolas,monospace;
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;
+  --radius:3px;--ink:var(--text-primary);--muted:var(--text-secondary);--paper:var(--surface-base);--wash:var(--surface-panel);--line:var(--border);--accent:var(--signal);--orange:var(--warning);--dark:var(--surface-deep);
+}
