@@ -7,7 +7,7 @@ export const changelog=[
     'Share links encode the JSON in the URL fragment with deflate-raw compression; the fragment is never sent to the server.',
     'Observation recorded: the MassRobotics repository examples use uppercase UUIDs that fail the schema pattern.',
     'Per-page publication and modification dates, Atom feed, llms.txt and this changelog.',
-    'Site source published under MIT (guide text CC BY 4.0): https://github.com/Madmin27/leetmeshSi'
+    'Site source published under MIT (guide text CC BY 4.0): https://github.com/Madmin27/fleetmeshSi'
   ]},
   {date:'2026-10-11',title:'Visual system redesign',items:['Dark graphite design tokens, two-family typography, SVG topology and architecture components, three-column Explorer console with mobile tabs. Technical copy unchanged.']},
   {date:'2026-10-08',title:'Phase 1: MassRobotics guide, comparison and Explorer',items:['MassRobotics practical guide and an eight-axis VDA 5050 vs MassRobotics comparison.','Browser-only VDA 5050 v3.0.0 Message Explorer with pinned schemas, Draft 2020-12 validation and full error paths.']},
