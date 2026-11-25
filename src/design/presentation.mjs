@@ -15,7 +15,7 @@ export function presentPage(page) {
     const heading=doc.createElement('div');heading.className='hero-copy';
     while(hero.firstChild)heading.append(hero.firstChild);
     hero.append(heading);
-    hero.insertAdjacentHTML('beforeend',`<div class="topology-workspace"><div class="topology-heading"><span class="mono">FLEET TOPOLOGY</span>${StatusBadge('ILLUSTRATIVE / NOT LIVE','amber')}</div><input type="checkbox" class="motion-toggle" id="topology-motion" checked><label class="motion-label" for="topology-motion">Motion</label><figure class="fleet-topology">${fleetTopology()}${fleetTopology(true)}<figcaption>Conceptual connections only. Protocol scope and support differ by system.</figcaption></figure></div>`);
+    hero.insertAdjacentHTML('beforeend',`<div class="topology-workspace"><div class="topology-heading"><span class="mono">Fleet topology</span>${StatusBadge('ILLUSTRATIVE / NOT LIVE','amber')}</div><input type="checkbox" class="motion-toggle" id="topology-motion" checked><label class="motion-label" for="topology-motion">Motion</label><figure class="fleet-topology">${fleetTopology()}${fleetTopology(true)}<figcaption>Conceptual connections only. Protocol scope and support differ by system.</figcaption></figure></div>`);
     doc.querySelector('.hero-note').classList.add('hero-index');
     doc.querySelector('.grid-three').classList.add('engineering-bento');
     doc.querySelector('.topic-card').insertAdjacentHTML('beforeend','<div class="protocol-mini" aria-hidden="true"><span>CONTROLLER</span><span class="mini-line"></span><span>INTERFACE</span><span class="mini-line"></span><span>ROBOT</span></div>');

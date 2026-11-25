@@ -27,7 +27,7 @@ function enumSection(rows) {
 }
 function requiredSummary(rows) {
   const top=rows.filter(r=>r.path.length===1);
-  return `<h2 id="top-level">Top-level members</h2><div class="top-level-grid">${top.map(r=>`<a href="#${anchorFor(r.path)}" class="top-level-item${r.required?' is-required':''}"><code>${esc(r.path[0])}</code><span>${esc(r.type)}</span><span class="mono">${r.required?'REQUIRED':'OPTIONAL'}</span></a>`).join('')}</div>`;
+  return `<h2 id="top-level">Top-level members</h2><div class="top-level-grid">${top.map(r=>`<a href="#${anchorFor(r.path)}" class="top-level-item${r.required?' is-required':''}"><code>${esc(r.path[0])}</code><span>${esc(r.type)}</span><span class="mono">${r.required?'required':'optional'}</span></a>`).join('')}</div>`;
 }
 function referencePage({standard,topic,schema,fileRecord,extra='',subtopic}) {
   const rows=walkSchema(schema);
@@ -44,7 +44,7 @@ function referencePage({standard,topic,schema,fileRecord,extra='',subtopic}) {
     intro:schema.description?esc(schema.description):`Field-by-field reference generated from the official ${standard.label} schema.`,
     fieldCount:rows.length,requiredCount:required,
     toc:[['provenance','Provenance'],['top-level','Top-level members'],['fields','All fields'],...(rows.some(r=>r.enum)?[['enumerations','Enumerations']]:[]),['usage','How to read this page']],
-    body:`<div class="reference-meta mono"><span>FIELDS ${rows.length}</span><span>REQUIRED ${required}</span><span>DIALECT ${esc(standard.dialect)}</span>${subtopic?`<span>MQTT SUBTOPIC ${esc(subtopic)}</span>`:''}</div>
+    body:`<div class="reference-meta mono"><span>${rows.length} fields</span><span>${required} required</span><span>${esc(standard.dialect)}</span>${subtopic?`<span>MQTT subtopic ${esc(subtopic)}</span>`:''}</div>
 <section id="provenance" class="provenance-block"><h2>Provenance</h2><p>Generated at build time from <a href="${standard.schemaLink(topic)}"><code>${esc(standard.schemaFile(topic))}</code></a> at commit <a href="${standard.repo}"><code>${standard.commit}</code></a> (snapshot ${esc(standard.id==='vda-5050'?vdaManifest.snapshotDate:massManifest.snapshotDate)}, SHA-256 <code>${fileRecord.sha256.slice(0,16)}…</code>). Descriptions are quoted verbatim; nothing is paraphrased. The <a href="${standard.normative.href}">${esc(standard.normative.label)}</a> is normative: if it differs from the schema, the publication wins.</p><p><a class="button" href="${explorer}">Validate ${esc(topic)} JSON locally</a> <a class="text-link" href="${standard.guide}">Read the ${esc(standard.label)} guide</a></p>${extra}</section>
 ${requiredSummary(rows)}
 <h2 id="fields">All fields</h2>${fieldTable(rows,{standard,topic})}

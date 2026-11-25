@@ -1,5 +1,10 @@
 // Dated, factual record of what changed on the site. Entries describe the site, not the standards.
 export const changelog=[
+  {date:'2026-11-25',title:'Design refresh and snapshot re-check',items:[
+    'Accent colour moved from acid green to steel blue; eyebrow labels, metadata lines and list numbering simplified. Layout, typography and all technical copy unchanged.',
+    'VDA 5050 schema snapshot re-checked against upstream main f480c40 (11 November 2026): all eight schema files byte-identical to the pinned commit 0b2ae43. MassRobotics upstream unchanged since 2021-10-08.',
+    'Homepage shows the latest changelog entries.'
+  ]},
   {date:'2026-11-01',title:'Phase 2: field reference, MassRobotics validation, share links',items:[
     'Message field reference generated from the pinned official schemas: 8 VDA 5050 v3.0.0 message families and 2 MassRobotics AMR Interop reports, 574 fields with provenance hashes.',
     'Message Explorer validates MassRobotics identityReport and statusReport against the repository schema (draft-07 semantics; the file declares no $schema).',

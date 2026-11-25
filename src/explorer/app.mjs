@@ -30,7 +30,7 @@ function stale() {
 }
 const initial=$('json-fallback').value;
 $('json-fallback').remove();
-const darkSyntax=HighlightStyle.define([{tag:tags.propertyName,color:'#c5cdc8'},{tag:tags.string,color:'#b7ed78'},{tag:tags.number,color:'#91c5d4'},{tag:tags.bool,color:'#e8c47a'},{tag:tags.null,color:'#e8c47a'},{tag:tags.punctuation,color:'#aeb7b5'}]);
+const darkSyntax=HighlightStyle.define([{tag:tags.propertyName,color:'#c5cdc8'},{tag:tags.string,color:'#9fc3e3'},{tag:tags.number,color:'#d8c39a'},{tag:tags.bool,color:'#e8c47a'},{tag:tags.null,color:'#e8c47a'},{tag:tags.punctuation,color:'#aeb7b5'}]);
 const editor=new EditorView({doc:initial,parent:$('editor'),extensions:[basicSetup,json(),EditorView.lineWrapping,EditorView.theme({'&':{color:'#f0f1eb',backgroundColor:'#0c0e0e'}},{dark:true}),syntaxHighlighting(darkSyntax),
   EditorView.contentAttributes.of({'aria-label':'JSON message',spellcheck:'false','aria-describedby':'payload-privacy'}),
   EditorView.updateListener.of(update=>{

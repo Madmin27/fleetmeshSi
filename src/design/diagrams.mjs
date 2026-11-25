@@ -11,19 +11,19 @@ export function ArchitectureCanvas({id,width,height,content,title,description,ex
 }
 export function fleetTopology(mobile=false) {
   const nodes=mobile?[
-    {x:10,y:12,w:150,label:'Fleet Controller',meta:'01 / CONTROL'},
-    {x:180,y:12,w:150,label:'MQTT Broker',meta:'02 / TRANSPORT'},
-    {x:10,y:112,w:150,label:'AMR',meta:'03 / MOBILE'},
-    {x:180,y:112,w:150,label:'AGV',meta:'04 / GUIDED'},
-    {x:10,y:232,w:150,label:'Drone',meta:'05 / AERIAL',muted:true},
-    {x:180,y:232,w:150,h:82,label:['Autonomous','Vehicle'],meta:'06 / BROADER',muted:true}
+    {x:10,y:12,w:150,label:'Fleet Controller',meta:'CONTROL'},
+    {x:180,y:12,w:150,label:'MQTT Broker',meta:'TRANSPORT'},
+    {x:10,y:112,w:150,label:'AMR',meta:'MOBILE'},
+    {x:180,y:112,w:150,label:'AGV',meta:'GUIDED'},
+    {x:10,y:232,w:150,label:'Drone',meta:'AERIAL',muted:true},
+    {x:180,y:232,w:150,h:82,label:['Autonomous','Vehicle'],meta:'BROADER',muted:true}
   ]:[
-    {x:30,y:26,w:225,label:'Fleet Controller',meta:'01 / CONTROL'},
-    {x:370,y:26,w:225,label:'MQTT Broker',meta:'02 / TRANSPORT'},
-    {x:765,y:26,w:225,label:'AMR',meta:'03 / MOBILE ROBOTICS'},
-    {x:765,y:166,w:225,label:'AGV',meta:'04 / GUIDED TRANSPORT'},
-    {x:30,y:180,w:225,label:'Drone',meta:'05 / BROADER RESEARCH',muted:true},
-    {x:370,y:180,w:225,label:'Autonomous Vehicle',meta:'06 / BROADER RESEARCH',muted:true}
+    {x:30,y:26,w:225,label:'Fleet Controller',meta:'CONTROL'},
+    {x:370,y:26,w:225,label:'MQTT Broker',meta:'TRANSPORT'},
+    {x:765,y:26,w:225,label:'AMR',meta:'MOBILE ROBOTICS'},
+    {x:765,y:166,w:225,label:'AGV',meta:'GUIDED TRANSPORT'},
+    {x:30,y:180,w:225,label:'Drone',meta:'BROADER RESEARCH',muted:true},
+    {x:370,y:180,w:225,label:'Autonomous Vehicle',meta:'BROADER RESEARCH',muted:true}
   ];
   const paths=mobile?['M160 44H180','M255 76V94H85V112','M255 94V112']:['M255 58H370','M595 58H765','M680 58V198H765'];
   const content=paths.map(d=>ProtocolEdge({d})).join('')+paths.map((d,i)=>DataFlow({d,delay:i===1})).join('')+
@@ -34,15 +34,15 @@ export function fleetTopology(mobile=false) {
 export function architectureDiagram(mobile=false) {
   const width=mobile?350:960,height=mobile?510:340;
   const nodes=mobile?[
-    {x:15,y:12,w:320,h:82,label:['Fleet Management','Orchestration'],meta:'01 / TASKS, TRAFFIC, ENERGY, RECOVERY'},
-    {x:15,y:134,w:320,label:'Interoperability Layer',meta:'02 / INTERFACES, MESSAGES, CAPABILITIES'},
+    {x:15,y:12,w:320,h:82,label:['Fleet Management','Orchestration'],meta:'TASKS, TRAFFIC, ENERGY, RECOVERY'},
+    {x:15,y:134,w:320,label:'Interoperability Layer',meta:'INTERFACES, MESSAGES, CAPABILITIES'},
     {x:15,y:256,w:150,label:'AMR',meta:'MOBILE ROBOTICS'},
     {x:185,y:256,w:150,label:'AGV',meta:'GUIDED TRANSPORT'},
     {x:15,y:398,w:150,label:'Drone',meta:'AERIAL SYSTEMS',muted:true},
     {x:185,y:398,w:150,h:82,label:['Autonomous','Vehicle'],meta:'BROADER AUTONOMY',muted:true}
   ]:[
-    {x:240,y:10,w:480,label:'Fleet Management / Orchestration',meta:'01 / TASKS, TRAFFIC, ENERGY, RECOVERY'},
-    {x:240,y:110,w:480,label:'Interoperability Layer',meta:'02 / INTERFACES, MESSAGES, CAPABILITY MODELS'},
+    {x:240,y:10,w:480,label:'Fleet Management / Orchestration',meta:'TASKS, TRAFFIC, ENERGY, RECOVERY'},
+    {x:240,y:110,w:480,label:'Interoperability Layer',meta:'INTERFACES, MESSAGES, CAPABILITY MODELS'},
     {x:10,y:240,w:210,label:'AMR',meta:'MOBILE ROBOTICS'},
     {x:250,y:240,w:210,label:'AGV',meta:'GUIDED TRANSPORT'},
     {x:490,y:240,w:210,label:'Drone',meta:'AERIAL SYSTEMS',muted:true},
